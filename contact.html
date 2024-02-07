@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hudds Web Design - About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> 
+    <script src="nav.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <section class="header-cont">
+        <header class="primary-header" id="sub">
+            <div class="logo">
+                <a href="index.html"><span role="img" aria-label="Hudds Web Design Logo"></span></a>
+            </div>
+
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="visually-hidden">Menu</span>
+            </button>
+
+            <nav>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li class="active"><a href="about.html">About</a>
+                    <li><a href="services.html">Services</a>
+                    <li><a href="index.html#portfolio">Portfolio</a>
+                    <li><a href="contact.html">Contact</a>
+                </ul>
+            </nav>
+        </header>
+        <h1>Contact Us</h1>
+    </section>
+
+    <main>
+        <div class="contact-info hidden">
+            <div class="contact-info-cont">
+                <ul>
+                    <li id="phone-icon">07704 502 982</li>
+                    <li>Call us</li>
+                    <li id="envelope-icon">info@huddswebdesign.co.uk</li>
+                    <li>Email us</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact-form hidden" >
+            <form netlify>
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" name="name" id="name" placeholder="Full Name" class="item" autocomplete="off" required>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" name="email" id="email" placeholder="Email Address" class="item" autocomplete="off" required>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" name="phone" id="phone" placeholder="Phone Number" class="item" autocomplete="off" required>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" name="subject" id="subject" placeholder="Subject" class="item" autocomplete="off" required>
+                    </div>
+                </div>
+
+                <div class="textarea-field field">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off" required></textarea>
+                </div>
+
+                <div class="button">
+                    <button type="submit" class="contact-button-other">Send Message</button>
+                </div>
+            </form>
+    </main>
+
+    <footer>
+        <div class="first-footer">
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul class="link-cont">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="people.html">People</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="second-footer"> 
+            <p>© 2024 Hudds Web Design. All rights reserved.</p>
+        </div>
+        
+    </footer>
+
+</body>
+
+</html>
