@@ -782,6 +782,10 @@ form .textarea-field .item {
         flex-direction: row;
     }
 
+    .pricing-cont {
+        outline: red 0.1em solid;
+    }
+
     .blob1 {
         height: 22em;
         width: 22em;
