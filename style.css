@@ -441,7 +441,8 @@ p {
     margin-right: auto;
 }
 
-.portfolio-image:hover {
+.portfolio-image:hover,
+.portfolio-image-2:hover {
     transition: 0.1s;
     transform: scale(1.1);
 }
