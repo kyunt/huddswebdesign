@@ -430,6 +430,17 @@ p {
     margin-right: auto;
 }
 
+.portfolio-image-2 {
+    background: url(./images/mockupOak.png) no-repeat center;
+    background-size: contain;
+    width: 16em;
+    height: 10em;
+    padding: 2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .portfolio-image:hover {
     transition: 0.1s;
     transform: scale(1.1);
@@ -464,6 +475,14 @@ p {
     padding: 2em 1em 0 1em;
     background-color: #f0fbff;
     min-width: 18em;
+}
+
+.portfolio-text h3 {
+    font-size: 1.6em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0.5em 0;
+    text-align: center;
 }
 
 /* Contact */
@@ -757,7 +776,8 @@ form .textarea-field .item {
         border-bottom: none;
     }
 
-    .pricing {
+    .pricing,
+    .portfolio-cont {
         flex-direction: row;
     }
 
