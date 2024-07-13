@@ -316,7 +316,8 @@ p {
 
 /* Pricing */
 
-.diamond-image {
+.diamond-image,
+.piggy-image {
     background: url(./images/DiamondIcon.svg) no-repeat center;
     height: 12em;
     width: 12em;
@@ -326,6 +327,10 @@ p {
     margin-right: auto;
     border-top: #2E94B9 0.4em dotted;
     border-bottom: #2E94B9 0.4em dotted;
+}
+
+.piggy-image {
+    background: url(./images/piggyIcon.svg) no-repeat center;
 }
 
 .pricing-cont,
@@ -769,7 +774,8 @@ form .textarea-field .item {
         margin-left: 5%;
     }
 
-    .diamond-image {
+    .diamond-image,
+    .piggy-image{
         height: 14em;
         width: 14em;
         padding: 10em;
@@ -780,10 +786,6 @@ form .textarea-field .item {
     .pricing,
     .portfolio-cont {
         flex-direction: row;
-    }
-
-    .pricing-cont {
-        outline: red 0.1em solid;
     }
 
     .blob1 {
