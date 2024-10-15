@@ -32,12 +32,15 @@ li a {
 .first-footer ul li a {
     text-decoration: none;
     color: #f0fbff;
-    font-weight: bold;
 }
 
 p {
     font-size: 1.2em;
     opacity: 0.8;
+}
+
+#thick {
+    font-weight: 700;
 }
 
 .flex {
@@ -62,17 +65,23 @@ p {
     top: 0;
     height: 160px;
     width: 100%;
-    padding: 0;
+    padding: 0 2em;
     margin: 0 auto;
     font-size: 1.2em;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    --gap: 3rem;
 }
 
 #sub {
     background: none;
+}
+
+.head-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 50em;
 }
 
 .header-cont {
@@ -98,9 +107,8 @@ p {
     background-image: url(./images/LogoHeader.svg);
     background-repeat: no-repeat;
     height: 8em;
-    width: 8em;
-    margin-right: auto;
-    margin-left: 1em;
+    min-width: 8em;
+    margin-top: 1em;
 }
 
 .logo a {
@@ -113,6 +121,10 @@ p {
     margin: 0;
     font-size: 1.2em;
     list-style: none;
+}
+
+.primary-navigation li {
+    font-size: 1.1em;
 }
 
 .mobile-nav-toggle {
@@ -138,12 +150,7 @@ p {
     display: flex;
     flex-direction: column;
     padding: 2em 1.5em;
-    background:
-        linear-gradient(
-            180deg,
-            #2E94B9,
-            #f0fbff
-        ) ;
+    background:#2E94B9;
     --mask:
         radial-gradient(7.43em at 50% calc(100% - 10.50em),#000 99%,#0000 101%) calc(50% - 10em) 0/20em 100%,
         radial-gradient(7.43em at 50% calc(100% + 5.50em),#0000 99%,#000 101%) 50% calc(100% - 5em)/20em 100% repeat-x;
@@ -170,7 +177,7 @@ p {
 .hero p {
     font-size: 1.4em;
     font-weight: 500;
-    color: #000001;
+    color: #fbfbfb;
     opacity: 0.9;
 }
 
@@ -239,7 +246,6 @@ p {
     text-align: center;
     border-bottom: #2E94B9 0.1em dotted;
     border-top: #2E94B9 0.1em dotted;
-    width: 7em;
 }
 
 .points h3 {
@@ -703,6 +709,17 @@ form .textarea-field .item {
     
 }
 
+@media (max-width: 340px) {
+    .hero {
+        height: 45em;
+        display: flex;
+        flex-direction: column;
+        padding: 2em 1.5em;
+        background:#2E94B9;
+        --mask: none;
+    }
+}
+
 @media (min-width: 420px) {
     .second-footer {
         height: 2em;
@@ -715,7 +732,10 @@ form .textarea-field .item {
         padding-block: 2rem ;
         padding-inline: clamp(2rem, 10vw, 10rem);
         --gap: 3rem;
+        font-size: 1.1em;
+        padding-left: 2em;
     }
+
 
     .first-footer ul {
         flex-direction: row;
@@ -758,6 +778,10 @@ form .textarea-field .item {
         max-width: 75em;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .primary-header {
+        padding: 0 5em;
     }
 
     .hero h1 {
@@ -821,6 +845,7 @@ form .textarea-field .item {
     .process-list p {
         margin-right: 3em;
     }
+
     
 }
 
@@ -835,9 +860,4 @@ form .textarea-field .item {
         --gap: 4rem;
     }
 
-    .logo {
-        width: 9em;
-        height: 9em;
-        margin: auto 0;
-    }
 }
