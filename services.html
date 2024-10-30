@@ -28,22 +28,24 @@
 <body>
     <section class="header-cont">
         <header class="primary-header" id="sub">
-            <div class="logo">
-                <a href="index.html"><span role="img" aria-label="Hudds Web Design Logo"></span></a>
-            </div>
-
-            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-                <span class="visually-hidden">Menu</span>
-            </button>
-
-            <nav>
-                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-                    <li class="active"><a href="about.html">About</a>
-                    <li><a href="services.html">Services</a>
-                    <li><a href="index.html#portfolio">Portfolio</a>
-                    <li><a href="contact.html">Contact</a>
-                </ul>
-            </nav>
+            <section class="head-section">
+                <div class="logo">
+                    <a href="index.html"><span role="img" aria-label="Hudds Web Design Logo"></span></a>
+                </div>
+    
+                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="visually-hidden">Menu</span>
+                </button>
+    
+                <nav>
+                    <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                        <li class="active"><a href="about.html">About</a>
+                        <li><a href="services.html">Services</a>
+                        <li><a href="#portfolio">Portfolio</a>
+                        <li><a href="contact.html">Contact</a>
+                    </ul>
+                </nav>
+            </section>
         </header>
         <h1>Our Services</h1>
     </section>
@@ -64,19 +66,19 @@
             <div class="main-point">
                 <h2>Standard Package</h2>
             <div class="point-cont">
-                <div class="point hidden">
+                <div class="point hidden" id="about-point">
                     <div class="point-circle" id="check"></div>
                     <h3>One-time £1200 Payment</h3>
                     <p>This covers the design, copywriting, development, initial hosting and any other miscellaneous costs.</p>
                 </div>
-                <div class="point hidden">
+                <div class="point hidden" id="about-point">
                     <div class="point-circle" id="check"></div>
                     <h3>£40 Monthly</h3>
                     <p>This fee covers hosting every month and any small updates you may need, including any new services you may offer, or new 
                         people your business employs.
                     </p>
                 </div>
-                <div class="point hidden">
+                <div class="point hidden" id="about-point">
                     <div class="point-circle" id="check"></div>
                     <h3>Optional Extras</h3>
                     <p>If you have any needs that aren't covered by the standard 5-page package, we can try to accomodate them for an additional fee.</p>
@@ -145,6 +147,17 @@
                     </ol>
                 </div>
                 <p>This whole process should take less than a week, provided we receive everything we ask from you in a timely manner.</p>
+            </div>
+        </div>
+
+        <div class="contact-info hidden">
+            <div class="contact-info-cont">
+                <ul>
+                    <li id="phone-icon">07704 502 982</li>
+                    <li>Call us</li>
+                    <li id="envelope-icon">info@huddswebdesign.co.uk</li>
+                    <li>Email us</li>
+                </ul>
             </div>
         </div>
 
